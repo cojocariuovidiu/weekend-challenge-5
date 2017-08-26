@@ -7,4 +7,4 @@ var rentalSchema = new Schema({
     sqft: { type: Number }
 });
 
-module.exports = mongoose.model('Rental', rentalSchema);
+module.exports = mongoose.model('Rent', rentalSchema);

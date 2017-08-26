@@ -1,11 +1,12 @@
 //* ----- REQUIRES ------*//
 var express = require('express');
+var app = express();
+
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var path = require('path');
 var rent = require('./routes/rent.js');
 
-var app = express();
 var port = 5000;
 
 /** ---------- MIDDLEWARE ---------- **/

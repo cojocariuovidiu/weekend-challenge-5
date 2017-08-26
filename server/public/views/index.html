@@ -6,14 +6,19 @@
     <script type="text/javascript" src="../vendors/angular.min.js"></script>
     <script type="text/javascript" src="../vendors/angular-route.min.js"></script>
     <script type="text/javascript" src="../scripts/client.js"></script>
-    <script type="text/javascript" src="/scripts/controllers/rental.controller.js"></script>
-    <script type="text/javascript" src="/scripts/services/rental.service.js"></script>
+    <script type="text/javascript" src="../scripts/controllers/rental.controller.js"></script>
+    <script type="text/javascript" src="../scripts/services/rental.services.js"></script>
 
 </head>
 
 <body ng-app="myApp">
-    {{vm}}
-    <h1>Weekend Five Challenge</h1>
+    <div class="container" ng-controller="RentalController as vm">
+        {{vm}}
+        <h1>Weekend Five Challenge</h1>
+        <div ng-repeat="rental in vm.rentalUnits.list"></div>
+        <h2>Rental Units</h2>
+        <p>{{rental.city}}</p>
+    </div>
 </body>
 
 </html>

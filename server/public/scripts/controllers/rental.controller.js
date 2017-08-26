@@ -3,8 +3,9 @@ myApp.controller('RentalController', ['RentalService',
         console.log('Rental Controller loaded');
 
         var self = this;
+        self.newRental = {};
         RentalService.getRental();
-        self.gotRentals = RentalService.gotRentals;
+        self.rentalUnits = RentalService.rentalUnits;
 
     }
-])
+]);
