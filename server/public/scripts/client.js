@@ -1,3 +1,3 @@
 //console.log('js sourced'); 
 
-var myApp = angular.module('propertyApp', []);
+var myApp = angular.module('myApp', []);
