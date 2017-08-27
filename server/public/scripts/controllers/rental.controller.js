@@ -6,6 +6,7 @@ myApp.controller('RentalController', ['RentalService',
         self.newRental = {};
         RentalService.getRental();
         self.rentalUnits = RentalService.rentalUnits;
+        console.log(self.rentalUnits);
 
     }
 ]);

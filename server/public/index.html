@@ -8,6 +8,8 @@
     <script type="text/javascript" src="../scripts/client.js"></script>
     <script type="text/javascript" src="../scripts/controllers/rental.controller.js"></script>
     <script type="text/javascript" src="../scripts/services/rental.services.js"></script>
+    <link rel="stylesheet" href="../vendors/bootstrap.min.css" />
+
 
 </head>
 
@@ -15,9 +17,10 @@
     <div class="container" ng-controller="RentalController as vm">
         <!-- {{vm}} -->
         <h1>Weekend Five Challenge</h1>
-        <div ng-repeat="rental in vm.rentalUnits.list"></div>
-        <h2>Rental Units</h2>
-        <p>{{rental.city}}</p>
+        <div ng-repeat="rental in vm.rentalUnits.list">
+            <h2>Rental Units</h2>
+            <p>City: {{rental.city}}: Rent: ${{rental.rent}}: Square Feet: {{rental.sqft}}s </p>
+        </div>
     </div>
 </body>
 
