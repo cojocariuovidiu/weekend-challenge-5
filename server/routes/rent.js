@@ -17,8 +17,24 @@ router.get('/', function(req, res) {
     });
 });
 
+router.post('/', function(req, res) {
+    console.log('new listing to store: ', req.body);
+
+    var rentalToAdd = new Rent(req.body);
+    rentalToAdd.save(function(err, data) {
+        console.log('saved to the db: ', data);
+        if (err) {
+            console.log('save error: ', err);
+            res.sendStatus(500);
+        } else {
+            res.sendStatus(201);
+        }
+    });
+});
+
 router.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, '../public/views/index.html'));
 });
+
 
 module.exports = router;

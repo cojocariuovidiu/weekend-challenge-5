@@ -4,7 +4,7 @@ myApp.controller('ListingController', ['ListingService',
 
         var self = this;
         self.newListing = {};
-        console.log('controller listing: ', self.newListing)
+        //console.log('controller listing: ', self.newListing)
         ListingService.getListing();
         self.listing = ListingService.listing;
         // console.log(self.listing);

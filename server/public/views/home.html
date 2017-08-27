@@ -1,13 +1,23 @@
 <div class="container">
     <div class="col-sm-12">
         <h3>Add a Listing</h3>
-        <div>
+        <div ng-controller="ListingController as vm">
             <label for="city">City: </label>
             <input type="text" ng-model="vm.newListing.city" id="city" placeholder="City">
             <label for="cost">Cost: </label>
             <input type="number" ng-model="vm.newListing.cost" id="cost" placeholder="Cost">
             <label for="sqft">Square Footage: </label>
-            <input type="number" ng-app="vm.newListing.sqft" id="sqft" placeholder="Square Footage">
+            <input type="number" ng-model="vm.newListing.sqft" id="sqft" placeholder="Square Footage">
             <button class="btn btn-primary" ng-click="vm.addListing()">Add Listing</button>
+        </div>
+        <h3>Add a Rental</h3>
+        <div ng-controller="RentalController as vm">
+            <label for="city">City: </label>
+            <input type="text" ng-model="vm.newRental.city" id="city" placeholder="City">
+            <label for="cost">Rent: </label>
+            <input type="number" ng-model="vm.newRental.rent" id="rent" placeholder="Rent">
+            <label for="sqft">Square Footage: </label>
+            <input type="number" ng-model="vm.newRental.sqft" id="sqft" placeholder="Square Footage">
+            <button class="btn btn-primary" ng-click="vm.addRental()">Add Rental</button>
         </div>
     </div>

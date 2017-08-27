@@ -17,7 +17,7 @@ router.get('/', function(req, res) {
 });
 
 router.post('/', function(req, res) {
-    console.log('new listing to store: ', req.body);
+    //console.log('new listing to store: ', req.body);
 
     var listingToAdd = new Listing(req.body);
     listingToAdd.save(function(err, data) {

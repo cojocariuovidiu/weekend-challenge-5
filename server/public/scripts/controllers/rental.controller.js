@@ -6,7 +6,11 @@ myApp.controller('RentalController', ['RentalService',
         self.newRental = {};
         RentalService.getRental();
         self.rentalUnits = RentalService.rentalUnits;
-        // console.log(self.rentalUnits);
+        console.log(self.rentalUnits);
 
+        self.addRental = function() {
+            //console.log('clicked to add new listing');
+            RentalService.addRental(self.newRental);
+        };
     }
 ]);

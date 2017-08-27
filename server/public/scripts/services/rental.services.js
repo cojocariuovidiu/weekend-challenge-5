@@ -10,4 +10,12 @@ myApp.service('RentalService', ['$http', function($http) {
             //console.log('get response service: ', self.rentalUnits);
         });
     };
+
+    self.addRental = function(newRental) {
+        //console.log('going to send this object to the server: ', newListing);
+        $http.post('/rent', newRental).then(function(response) {
+            console.log('service post response: ', response);
+            self.getRental();
+        });
+    };
 }]); // end  myApp.service
