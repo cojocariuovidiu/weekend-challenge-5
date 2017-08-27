@@ -1,5 +1,5 @@
 myApp.service('RentalService', ['$http', function($http) {
-    console.log('Person service loaded');
+    console.log('Rental service loaded');
 
     var self = this;
     self.rentalUnits = { list: [] };

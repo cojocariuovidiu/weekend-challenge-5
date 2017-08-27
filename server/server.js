@@ -6,7 +6,7 @@ var mongoose = require('mongoose');
 var path = require('path');
 var rent = require('./routes/rent.js');
 var index = require('./routes/rent.js');
-
+var listings = require('./routes/listing.js');
 var port = 5000;
 
 /** ---------- MIDDLEWARE ---------- **/
@@ -17,6 +17,7 @@ app.use(bodyParser.json());
 /** ---------- EXPRESS ROUTES ---------- **/
 app.use('/', index);
 app.use('/rent', rent);
+app.use('/listing', listings);
 
 /** MONGOOSE CONNECTION **/
 var databaseUrl = 'mongodb://localhost:27017/realestate';
