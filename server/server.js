@@ -1,20 +1,21 @@
 //* ----- REQUIRES ------*//
 var express = require('express');
 var app = express();
-
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var path = require('path');
 var rent = require('./routes/rent.js');
+var index = require('./routes/rent.js');
 
 var port = 5000;
 
 /** ---------- MIDDLEWARE ---------- **/
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, './public')));
 app.use(bodyParser.json());
 
 
 /** ---------- EXPRESS ROUTES ---------- **/
+app.use('/', index);
 app.use('/rent', rent);
 
 /** MONGOOSE CONNECTION **/
