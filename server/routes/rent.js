@@ -5,6 +5,7 @@ var Rent = require('../models/rental.schema.js');
 
 router.get('/', function(req, res) {
     console.log('Get route GOT');
+    //res.send([{ city: 'test', sqft: 'also test' }]);
     Rent.find({}, function(err, data) {
         if (err) {
             console.log('find error: ', err);
