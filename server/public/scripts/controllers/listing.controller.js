@@ -17,5 +17,9 @@ myApp.controller('ListingController', ['ListingService',
         self.deleteListing = function(listingId) {
             ListingService.deleteListing(listingId);
         };
+
+        self.updateListing = function(currentListing) {
+            ListingService.updateListing(currentListing);
+        };
     }
 ]);

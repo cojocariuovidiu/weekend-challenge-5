@@ -6,8 +6,8 @@
                 <p>City: {{listing.city}}</p>
                 <p>Cost: {{listing.cost | currency}}</p>
                 <p>Square Feet: {{listing.sqft}}</p>
+                <button ng-click="vm.updateListing(listing)" class="btn btn-default">Update</button>
                 <button ng-click="vm.deleteListing(listing._id)" class="btn btn-danger">Delete</button>
-
             </div>
         </div>
     </div>

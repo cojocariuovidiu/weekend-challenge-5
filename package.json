@@ -1,28 +1,29 @@
 {
-    "name": "weekend-challenge-5",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node server/server.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/nicbade/weekend-challenge-5.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/nicbade/weekend-challenge-5/issues"
-    },
-    "homepage": "https://github.com/nicbade/weekend-challenge-5#readme",
-    "dependencies": {
-        "angular": "^1.6.6",
-        "angular-route": "^1.6.6",
-        "body-parser": "^1.17.2",
-        "bootstrap": "^3.3.7",
-        "express": "^4.15.4",
-        "mongoose": "^4.11.8"
-    }
+  "name": "weekend-challenge-5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicbade/weekend-challenge-5.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicbade/weekend-challenge-5/issues"
+  },
+  "homepage": "https://github.com/nicbade/weekend-challenge-5#readme",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-route": "^1.6.6",
+    "angular-xeditable": "^0.8.0",
+    "body-parser": "^1.17.2",
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.8"
+  }
 }

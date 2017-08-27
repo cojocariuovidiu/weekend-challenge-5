@@ -24,4 +24,10 @@ myApp.service('ListingService', ['$http', function($http) {
             self.getListing();
         });
     };
+
+    self.updateListing = function(currentListing) {
+        $http.put('/listing/' + currentListing._id, currentListing).then(function(response) {
+            self.getListing();
+        });
+    };
 }]); // end  myApp.service
