@@ -1,12 +1,13 @@
 <div class="container">
-    <div class="col-md-12">
+    <div class="col-sm-12">
         <h3>Add a Listing</h3>
         <div>
             <label for="city">City: </label>
             <input type="text" ng-model="vm.newListing.city" id="city" placeholder="City">
             <label for="cost">Cost: </label>
-            <input type="number" ng-model="vm.newListing.cost>" id="cost" placeholder="Cost">
+            <input type="number" ng-model="vm.newListing.cost" id="cost" placeholder="Cost">
             <label for="sqft">Square Footage: </label>
             <input type="number" ng-app="vm.newListing.sqft" id="sqft" placeholder="Square Footage">
+            <button class="btn btn-primary" ng-click="vm.addListing()">Add Listing</button>
         </div>
     </div>
