@@ -11,24 +11,24 @@
     <script type="text/javascript" src="../scripts/services/rental.services.js"></script>
     <script type="text/javascript" src="../scripts/services/listing.services.js"></script>
     <link rel="stylesheet" href="../vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="../styles/styles.css">
 
 
 </head>
 
 <body ng-app="myApp">
-    <div>
+    <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <!-- {{vm}} -->
-            <h1>Weekend Five Challenge</h1>
-            <a href="#!">
-                Home
-            </a>
-            <a href="#!rent">
-                Rental Listings
-            </a>
-            <a href="#!listing">
-                    Sale Listings
-                </a>
+            <a href="#!" class="navbar-brand">Weekend Five Challenge</a>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#!rent">Rental Listings</a></li>
+                <li><a href="#!listing">Sale Listings</a></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <div class="container">
             <div class="row">
                 <div class='col-md-12'>
                     <ng-view></ng-view>

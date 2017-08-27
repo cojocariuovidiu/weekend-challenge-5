@@ -1,6 +1,12 @@
-<div ng-repeat="rental in vm.rentalUnits.list">
-    <h2>Rental Units</h2>
-    <p>City: {{rental.city}}</p>
-    <p>Rent: ${{rental.rent}}</p>
-    <p>Square Feet: {{rental.sqft}}</p>
+<div class="container">
+    <div class="row text-center">
+        <div ng-repeat="rental in vm.rentalUnits.list">
+            <div class="well col-md-4 box">
+                <h2>Rental Units</h2>
+                <p>City: {{rental.city}}</p>
+                <p>Cost: {{rental.rent | currency}}</p>
+                <p>Square Feet: {{rental.sqft}}</p>
+            </div>
+        </div>
+    </div>
 </div>
