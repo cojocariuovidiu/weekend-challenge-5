@@ -17,14 +17,12 @@
     <div class="container" ng-controller="RentalController as vm">
         <!-- {{vm}} -->
         <h1>Weekend Five Challenge</h1>
+        <a href="#!rent">
+            <h3>Rental Listings</h3>
+        </a>
         <div class="row">
             <div class='col-md-12'>
-                <div ng-repeat="rental in vm.rentalUnits.list" class='well col-md-3'>
-                    <h2>Rental Units</h2>
-                    <p>City: {{rental.city}}</p>
-                    <p>Rent: ${{rental.rent}}</p>
-                    <p>Square Feet: {{rental.sqft}}</p>
-                </div>
+                <ng-view></ng-view>
             </div>
         </div>
     </div>
