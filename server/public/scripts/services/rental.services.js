@@ -18,4 +18,10 @@ myApp.service('RentalService', ['$http', function($http) {
             self.getRental();
         });
     };
+
+    self.deleteRental = function(rentalId) {
+        $http.delete('/rent/' + rentalId).then(function(response) {
+            self.getRental();
+        });
+    }
 }]); // end  myApp.service

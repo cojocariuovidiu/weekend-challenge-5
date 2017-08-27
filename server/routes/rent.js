@@ -32,6 +32,19 @@ router.post('/', function(req, res) {
     });
 });
 
+router.delete('/:id', function(req, res) {
+    Rent.findByIdAndRemove({ _id: req.params.id },
+        function(err, data) {
+            if (err) {
+                console.log('delete error: ', err);
+                res.sendStatus(500);
+            } else {
+                res.sendStatus(200);
+            }
+        }
+    );
+});
+
 router.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, '../public/views/index.html'));
 });

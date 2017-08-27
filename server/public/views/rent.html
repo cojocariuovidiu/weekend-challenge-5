@@ -6,7 +6,7 @@
                 <p>City: {{rental.city}}</p>
                 <p>Cost: {{rental.rent | currency}}</p>
                 <p>Square Feet: {{rental.sqft}}</p>
+                <button ng-click="vm.deleteRental(rental._id)" class="btn btn-danger">Delete</button>
             </div>
         </div>
     </div>
-</div>

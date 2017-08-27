@@ -13,5 +13,9 @@ myApp.controller('ListingController', ['ListingService',
             //console.log('clicked to add new listing');
             ListingService.addListing(self.newListing);
         };
+
+        self.deleteListing = function(listingId) {
+            ListingService.deleteListing(listingId);
+        };
     }
 ]);

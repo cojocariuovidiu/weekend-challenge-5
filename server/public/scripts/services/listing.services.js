@@ -18,4 +18,10 @@ myApp.service('ListingService', ['$http', function($http) {
             self.getListing();
         });
     };
+
+    self.deleteListing = function(listingId) {
+        $http.delete('/listing/' + listingId).then(function(response) {
+            self.getListing();
+        });
+    };
 }]); // end  myApp.service

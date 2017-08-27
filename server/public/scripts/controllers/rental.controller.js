@@ -12,5 +12,9 @@ myApp.controller('RentalController', ['RentalService',
             //console.log('clicked to add new listing');
             RentalService.addRental(self.newRental);
         };
+
+        self.deleteRental = function(rentalId) {
+            RentalService.deleteRental(rentalId);
+        };
     }
 ]);
